@@ -50,6 +50,9 @@ class ViewController: UIViewController {
                 pantalla.text = "\(textoActual) \(operacion) "
                 break
             case "Calcular":
+                if op1 == "" || op2 == "" {
+                    return
+                }
                 primerOperando = true
                 esOperacion = false
                 limpiar = true
